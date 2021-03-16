@@ -1,0 +1,257 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9740,        249]
+NotebookOptionsPosition[      7601,        206]
+NotebookOutlinePosition[      7998,        222]
+CellTagsIndexPosition[      7955,        219]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[StyleBox["Take home exam - computational essay",
+ FontSize->36]], "Section",
+ CellChangeTimes->{{3.796238174988752*^9, 3.796238187729144*^9}, {
+  3.796238529941719*^9, 3.796238532085359*^9}, {3.796240652648163*^9, 
+  3.7962406544898033`*^9}},ExpressionUUID->"f818ce5e-3554-45cb-a259-\
+6835a072e838"],
+
+Cell[TextData[{
+ StyleBox["For this part of the course you will have to write a short \
+computational essay. Here is a blog about the format and structure of a \
+computational essay:\n\n",
+  FontSize->18],
+ StyleBox[ButtonBox["https://writings.stephenwolfram.com/2017/11/what-is-a-\
+computational-essay/",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://writings.stephenwolfram.com/2017/11/what-is-a-computational-\
+essay/"], None},
+  ButtonNote->
+   "https://writings.stephenwolfram.com/2017/11/what-is-a-computational-essay/\
+"],
+  FontSize->18]
+}], "Text",
+ CellChangeTimes->{{3.796238240860531*^9, 3.7962382675343227`*^9}, {
+  3.796238308235414*^9, 3.796238345234247*^9}, {3.796238388326769*^9, 
+  3.796238397649641*^9}, {3.796238499922162*^9, 3.796238502223303*^9}, {
+  3.796238540652589*^9, 
+  3.796238543603909*^9}},ExpressionUUID->"8700f82f-142a-437d-95eb-\
+60f7ebbae47b"],
+
+Cell[TextData[StyleBox["As a rough guide line the essay should have about \
+3000 words. ",
+ FontSize->18]], "Text",
+ CellChangeTimes->{{3.796238510269041*^9, 3.796238517535245*^9}, {
+  3.796238737052294*^9, 3.7962387584759703`*^9}, {3.79624038394022*^9, 
+  3.796240397497435*^9}},ExpressionUUID->"735fd33e-7da2-44bb-bb57-\
+4220e1b27deb"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Topic", "Section"]], "Subsection",
+ CellChangeTimes->{{3.796238773086152*^9, 
+  3.7962387753279333`*^9}},ExpressionUUID->"da98e517-91c6-4c45-b641-\
+a775e2e196f7"],
+
+Cell[TextData[{
+ StyleBox["In the Wolfram data repository there are a number of datasets on \
+the recent COVID-19 pandemic:\n",
+  FontSize->18],
+ StyleBox[ButtonBox["https://datarepository.wolframcloud.com/search/?i=covid",
+  
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://datarepository.wolframcloud.com/search/?i=covid"], None},
+  ButtonNote->"https://datarepository.wolframcloud.com/search/?i=covid"],
+  FontSize->18]
+}], "Text",
+ CellChangeTimes->{{3.796238784169807*^9, 3.7962388303482227`*^9}, {
+  3.7962402437940683`*^9, 
+  3.796240244225665*^9}},ExpressionUUID->"7afe50a9-325f-4ca6-976d-\
+6779b5c02bdd"],
+
+Cell[TextData[StyleBox["You will have to ask and answer one or more \
+interesting questions about the pandemic and use the data to tell your story. \
+",
+ FontSize->18]], "Text",
+ CellChangeTimes->{{3.796238944665081*^9, 3.7962389949548607`*^9}, 
+   3.796239043210429*^9, {3.7962390898450727`*^9, 
+   3.7962390989523497`*^9}},ExpressionUUID->"6959a6c4-708d-41c1-8d22-\
+b40aaf97a847"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Ingredients", "Section"]], "Subsection",
+ CellChangeTimes->{{3.796238773086152*^9, 3.7962387753279333`*^9}, {
+  3.7962391262804317`*^9, 
+  3.796239129182008*^9}},ExpressionUUID->"bee51a66-473b-4f81-82ef-\
+1dd04d9f1fe0"],
+
+Cell[TextData[StyleBox["Your computational essay should contain at least all \
+of the following:",
+ FontSize->18]], "Text",
+ CellChangeTimes->{{3.796239133169989*^9, 3.796239153558976*^9}, {
+  3.796239196270612*^9, 3.796239252360224*^9}, {3.796239301818954*^9, 
+  3.7962393782731943`*^9}, {3.79623944407847*^9, 3.796239445443466*^9}, {
+  3.796240107945342*^9, 
+  3.79624010899288*^9}},ExpressionUUID->"2e15ca3d-7a3d-4120-b7d2-\
+b5a69567bfe3"],
+
+Cell[TextData[StyleBox["at least one linear or generalised linear model \
+including an interpretation of the Parameter and ANOVATable;",
+ FontSize->18]], "Item",
+ CellChangeTimes->{{3.796239423983912*^9, 
+  3.796239425095573*^9}},ExpressionUUID->"75fdd533-e978-49b8-88bd-\
+2069a662eb5d"],
+
+Cell[TextData[StyleBox["the analysis of a time series, i.e. the analysis of a \
+quantity that changes over time;",
+ FontSize->18]], "Item",
+ CellChangeTimes->{{3.796239423983912*^9, 
+  3.7962394310568857`*^9}},ExpressionUUID->"e6216dd4-1120-45d8-9799-\
+77ebdd7a594d"],
+
+Cell[TextData[StyleBox["a visualisation of geospatial data, i.e. data in \
+various locations of the world.",
+ FontSize->18]], "Item",
+ CellChangeTimes->{{3.796239423983912*^9, 3.796239437698238*^9}, {
+  3.796239630154584*^9, 
+  3.796239630517582*^9}},ExpressionUUID->"e4a915da-ab01-4316-a731-\
+03770161bf5f"],
+
+Cell[TextData[StyleBox["You should not just modify the examples given in the \
+descriptions of the datasets, but come up with your own ideas and questions.",
+ 
+ FontSize->18]], "Text",
+ CellChangeTimes->{{3.796239647700335*^9, 
+  3.796239709584869*^9}},ExpressionUUID->"64c8ed86-fdaf-4b1a-9d7e-\
+6cc252ee7260"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Timelines",
+ FontSize->24]], "Subsection",
+ CellChangeTimes->{{3.796239716703127*^9, 
+  3.796239725351856*^9}},ExpressionUUID->"60bb6454-f051-4a75-9d04-\
+bd60ca8c2668"],
+
+Cell[TextData[{
+ StyleBox["The deadline for submission is the 14th of May at 16:00",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox[", i.e. more than three weeks. You are given that much time because \
+of the special circumstances of working from home. The time you are expected \
+to work on the essay is supposed to be only a small fraction of that. ",
+  FontSize->18]
+}], "Text",
+ CellChangeTimes->{{3.796239727414568*^9, 3.79623975938675*^9}, {
+  3.796239792668325*^9, 3.796239812618643*^9}, {3.796239884774351*^9, 
+  3.796239966516308*^9}, {3.823764190249701*^9, 3.82376419113024*^9}, {
+  3.823764496274417*^9, 
+  3.8237645014285383`*^9}},ExpressionUUID->"b0ea87b2-569e-49d2-ab76-\
+966556071fb7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Submission",
+ FontSize->24]], "Subsection",
+ CellChangeTimes->{{3.7962400194930687`*^9, 
+  3.796240020570758*^9}},ExpressionUUID->"33520894-2d89-48b2-b14f-\
+0ee080eab84a"],
+
+Cell[TextData[StyleBox["You will have to submit the notebook in a form that \
+is fully executable, i.e. if I execute the entire notebook it should work \
+without any errors and warnings. The submission can be done by email if the \
+file is not too large. I will also accept uploads to Dropbox or the \
+University\[CloseCurlyQuote]s ZendTo.",
+ FontSize->18]], "Text",
+ CellChangeTimes->{{3.796240027067849*^9, 3.7962400741200666`*^9}, {
+  3.796240191219874*^9, 
+  3.796240224209012*^9}},ExpressionUUID->"b91e84cd-d667-401d-a6df-\
+3b14a49315c8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Questions?",
+ FontSize->24]], "Subsection",
+ CellChangeTimes->{{3.796240262525714*^9, 
+  3.796240268620883*^9}},ExpressionUUID->"ae5f7830-a04c-4f67-95cb-\
+2ded483b6ce0"],
+
+Cell[TextData[StyleBox["If you have any questions please do contact me. If \
+there are any issues arising from the current COVID-19 situation and you have \
+issues working on this assignment, please do let me know.",
+ FontSize->18]], "Text",
+ CellChangeTimes->{{3.7962402704586363`*^9, 
+  3.796240317034173*^9}},ExpressionUUID->"3b1c7811-384e-45b8-9cc7-\
+46cc12e8d397"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 726},
+WindowMargins->{{Automatic, 88}, {Automatic, 29}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"f11b7176-7548-4155-8d59-8cf81a13e7fb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 313, 5, 77, "Section",ExpressionUUID->"f818ce5e-3554-45cb-a259-6835a072e838"],
+Cell[896, 29, 891, 21, 116, "Text",ExpressionUUID->"8700f82f-142a-437d-95eb-60f7ebbae47b"],
+Cell[1790, 52, 337, 6, 38, "Text",ExpressionUUID->"735fd33e-7da2-44bb-bb57-4220e1b27deb"],
+Cell[CellGroupData[{
+Cell[2152, 62, 186, 3, 64, "Subsection",ExpressionUUID->"da98e517-91c6-4c45-b641-a775e2e196f7"],
+Cell[2341, 67, 624, 15, 90, "Text",ExpressionUUID->"7afe50a9-325f-4ca6-976d-6779b5c02bdd"],
+Cell[2968, 84, 382, 7, 64, "Text",ExpressionUUID->"6959a6c4-708d-41c1-8d22-b40aaf97a847"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3387, 96, 243, 4, 64, "Subsection",ExpressionUUID->"bee51a66-473b-4f81-82ef-1dd04d9f1fe0"],
+Cell[3633, 102, 442, 8, 38, "Text",ExpressionUUID->"2e15ca3d-7a3d-4120-b7d2-b5a69567bfe3"],
+Cell[4078, 112, 287, 5, 59, "Item",ExpressionUUID->"75fdd533-e978-49b8-88bd-2069a662eb5d"],
+Cell[4368, 119, 267, 5, 35, "Item",ExpressionUUID->"e6216dd4-1120-45d8-9799-77ebdd7a594d"],
+Cell[4638, 126, 308, 6, 35, "Item",ExpressionUUID->"e4a915da-ab01-4316-a731-03770161bf5f"],
+Cell[4949, 134, 310, 6, 64, "Text",ExpressionUUID->"64c8ed86-fdaf-4b1a-9d7e-6cc252ee7260"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5296, 145, 192, 4, 59, "Subsection",ExpressionUUID->"60bb6454-f051-4a75-9d04-bd60ca8c2668"],
+Cell[5491, 151, 702, 14, 90, "Text",ExpressionUUID->"b0ea87b2-569e-49d2-ab76-966556071fb7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6230, 170, 195, 4, 59, "Subsection",ExpressionUUID->"33520894-2d89-48b2-b14f-0ee080eab84a"],
+Cell[6428, 176, 543, 9, 116, "Text",ExpressionUUID->"b91e84cd-d667-401d-a6df-3b14a49315c8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7008, 190, 193, 4, 59, "Subsection",ExpressionUUID->"ae5f7830-a04c-4f67-95cb-2ded483b6ce0"],
+Cell[7204, 196, 369, 6, 90, "Text",ExpressionUUID->"3b1c7811-384e-45b8-9cc7-46cc12e8d397"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
