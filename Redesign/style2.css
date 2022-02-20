@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Courgette&display=swap');
+
+.custom-font {
+	font-family: 'Caveat', cursive;
+}
+
+.heavy-font {
+	font-weight: bold;
+}
