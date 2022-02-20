@@ -86,7 +86,7 @@ p {
   margin-top: 0;
   margin-bottom: 1rem; }
 
-abbr[title],
+abbr[title],MexaDev.github.io/Redesign/index.html
 abbr[data-original-title] {
   text-decoration: underline;
   text-decoration: underline dotted;
@@ -4110,7 +4110,7 @@ button.close {
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #1b2021 !important; }
+  background-color: #3D4D66; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
@@ -6167,9 +6167,9 @@ body > * {
 .navbar {
   transition: background-color .5s ease-out; }
 
-.navbar-ontop {
+./*navbar-ontop {
   background-color: transparent !important; }
-
+*/
 /* Animate on entrance */
 .animate-in-down {
   transition: all 1.3s ease-out;
