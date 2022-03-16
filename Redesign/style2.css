@@ -51,3 +51,31 @@ h3 {
  	transition: transform .75s;
  	transform: scale(1.75);
  }
+
+.ecwid-productBrowser {
+ 	border-radius: 20px;
+ 	font-family: 'Caveat', cursive;
+ 	opacity: 0.75;
+ }
+
+ .smart-font {
+ 	font-family: 'Montserrat', sans-serif;
+ }
+
+ .page-title__name, .ec-header-h1, .product-details__product-title, .ec-header-h3, .card-text, .text-center{
+ 	font-family: 'Montserrat', sans-serif;
+ }
+
+ .page-title__name, .ec-header-h1 {
+ 	display: flex;
+ 	justify-content: center;
+ }
+
+ .box-top {
+ 	border-top-left-radius: 20px;
+ 	border-top-right-radius: 20px;
+ }
+
+ .box-bottom {
+
+ }
