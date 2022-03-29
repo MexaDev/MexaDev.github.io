@@ -83,3 +83,11 @@ h3 {
 .label-text {
     color: black;
 }
+
+.bg-primary {
+    color: #3D4D66;
+}
+
+.custom-edit {
+    opacity: 0.82;
+}
