@@ -91,3 +91,9 @@ h3 {
 .custom-edit {
     opacity: 0.85;
 }
+
+.head-back {
+    background-color: rgba(51,51,51,0.5);
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
