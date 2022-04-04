@@ -3,6 +3,15 @@
 body {
 	background: url('img/back.jpg') no-repeat center center fixed;
 }
+/* Style the video: 100% width and height to cover the entire window */
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
 .header-nav {
 	position: relative;
@@ -20,7 +29,7 @@ body {
 	align-content: center;
 	padding-top: 18px;
 	padding-bottom: 18px;
-	background: rgba(104, 79, 145, 0.70);
+	background: rgba(91, 85, 85, 0.70);
 }
 
 .start {
@@ -31,9 +40,9 @@ body {
 	padding-top: 18px;
 	padding-bottom: 18px;
 	padding-left: 10px;
-	background: rgba(104, 79, 145, 0.70);
-	border-bottom-left-radius: 20px;
-	border-top-left-radius: 20px;
+	background: rgba(91, 85, 85, 0.70);
+	border-bottom-left-radius: 10%;
+	border-top-left-radius: 10%;
 }
 
 .end {
@@ -44,18 +53,26 @@ body {
 	padding-top: 18px;
 	padding-bottom: 18px;
 	padding-right: 10px;
-	background: rgba(104, 79, 145, 0.70);
-	border-bottom-right-radius: 18px;
-	border-top-right-radius: 18px;
+	background: rgba(91, 85, 85, 0.70);
+	border-bottom-right-radius: 10%;
+	border-top-right-radius: 10%;
 }
 
 .h1 {
 	position: relative;
 	display: flex;
 	justify-content: center;
-	padding-top: 50px;
+	align-content: center;
+	text-align: center;
+	padding-top: 16px;
 	padding-bottom: 18px;
-	color: whitesmoke;
+	padding-left: 10px;
+	background: rgba(91, 85, 85, 0.70);
+	border-radius: 25px;
+	margin-top: 50px;
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-bottom: 50px;
 }
 
 .custom-font {
@@ -66,3 +83,15 @@ body {
 	color: whitesmoke;
 }
 
+.container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-left: 10px;
+	background: rgba(91, 85, 85, 0.70);
+	border-radius: 25px;
+}
