@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+	background: url('img/back.jpg') no-repeat center center fixed;
+}
+
+.header-nav {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+
+.mid {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	background: rgba(104, 79, 145, 0.70);
+}
+
+.start {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-left: 10px;
+	background: rgba(104, 79, 145, 0.70);
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+.end {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-right: 10px;
+	background: rgba(104, 79, 145, 0.70);
+	border-bottom-right-radius: 18px;
+	border-top-right-radius: 18px;
+}
+
+.h1 {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 18px;
+	color: whitesmoke;
+}
+
+.custom-font {
+	font-family: 'Orbitron', sans-serif;
+}
+
+.custom-color {
+	color: whitesmoke;
+}
+
