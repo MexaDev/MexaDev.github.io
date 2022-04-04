@@ -41,8 +41,8 @@ video {
 	padding-bottom: 18px;
 	padding-left: 10px;
 	background: rgba(91, 85, 85, 0.70);
-	border-bottom-left-radius: 10%;
-	border-top-left-radius: 10%;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
 }
 
 .end {
@@ -54,8 +54,8 @@ video {
 	padding-bottom: 18px;
 	padding-right: 10px;
 	background: rgba(91, 85, 85, 0.70);
-	border-bottom-right-radius: 10%;
-	border-top-right-radius: 10%;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
 }
 
 .h1 {
@@ -94,4 +94,39 @@ video {
 	padding-left: 10px;
 	background: rgba(91, 85, 85, 0.70);
 	border-radius: 25px;
+}
+
+section {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: visible;
+}
+.over {
+	overflow: visible;
+}
+
+.sect1 {
+	clip-path: polygon(0 45%, 100% 0, 100% 45%, 0 100%);
+	background: rgba(71, 61, 101, 0.70);
+	background-image: url('img/back-0-1.png');
+	opacity: 0.70;
+}
+
+.sect2 {
+  clip-path: polygon(0 45%, 100% 0, 100% 45%, 0 100%);
+  background: rgba(71, 61, 101, 0.70);
+  background-image: url('img/back-0-2.png');
+  opacity: 0.70;
+}
+
+.sect3 {
+  clip-path: polygon(0 45%, 100% 0, 100% 100%, 0 100%);
+  background: rgba(71, 61, 101, 0.70);
+  background-image: url('img/back-0-3.png');
+  opacity: 0.70;
+}
+
+.up {
+	text-transform: uppercase;
 }
