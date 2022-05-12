@@ -24,7 +24,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
-  <body class="smart-font">
+  <body onload="show()" class="smart-font text-center">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light" style="background-color: #3D4D66;">
       <div class="container">
@@ -44,7 +44,10 @@
               <a class="nav-link heavy-font custom-size" href="catering.html"><b>CATERING</b></a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link heavy-font custom-size" href="specials.html"><b>SPECIALS</b></a>
+              <a class="nav-link heavy-font custom-size" href="specials.html"><b>DAILY SPECIALS</b></a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link heavy-font custom-size" href="contact.html"><b>CONTACT</b></a>
             </li>
             <!-- <li class="nav-item mx-2">
               <a class="nav-link heavy-font custom-size" href="shop-home.html"><b>ONLINE SHOP</b></a>
@@ -53,65 +56,113 @@
       </div>
     </nav>
     <!-- Cover -->
-    <div class="align-items-center d-flex photo-overlay py-5 cover2" style="background-image: url('assets/new/pizza.jpg');">
+    <div class="align-items-center d-flex photo-overlay cover2" style="background-image: url('assets/new/pizza.jpg');">
       <div class="container">
 
           <!-- Menu -->
 
           <div class="card my-4">
             <div class="card-body">
-              <h1 class="card-text text-center smart-font custom-font">TAKE A GLANCE THROUGH OUR NEW MENU</h1>
+              <h1 class="card-text text-center smart-font custom-font"><span class="custom-font custom-size4">Rojo</span>  Menu's</h1>
             </div>
           </div>
-
-            <!-- <div class="d-flex justify-content-center"><embed src="assets/menu/png/ROJO NEW MENU 3 STARTERS 2022.png" width="100%" height="100%"></div><br>
-            <div class="d-flex justify-content-center"><embed src="assets/menu/png/ROJO NEW MENU 3 MAIN MEALS 2022(1).png" width="100%" height="100%"></div><br>
-            <div class="d-flex justify-content-center"><embed src="assets/menu/png/ROJO NEW MENU 3 MAIN MEALS 2022(2).png" width="100%" height="100%"></div><br>
-            <div class="d-flex justify-content-center"><embed src="assets/menu/png/ROJO NEW MENU 3 SALADS 2022.png" width="100%" height="100%"></div><br>
-            <div class="d-flex justify-content-center"><embed src="assets/menu/png/ROJO NEW MENU 3 HAMBURGERS 2022.png" width="100%" height="100%"></div><br>
-            <div class="d-flex justify-content-center"><embed src="assets/menu/png/ROJO NEW MENU 3 PIZZA 2022.png" width="100%" height="100%"></div><br>
-            <div class="d-flex justify-content-center"><embed src="assets/menu/png/ROJO NEW MENU 3 WRAPS 2022.png" width="100%" height="100%"></div><br>
-            <div class="d-flex justify-content-center"><embed src="assets/menu/png/ROJO NEW MENU 3 KIDDIES 2022.png" width="100%" height="100%"></div><br>
-            <div class="d-flex justify-content-center"><embed src="assets/menu/png/ROJO NEW MENU 3 DESSERT 2022.png" width="100%" height="100%"></div><br> -->
-                          <section>
-    <div class="rt-container">
-          <div class="col-rt-12">
-              <div class="Scriptcontent">
+          <div class="card my-4">
+            <div class="card-body">
+              <h1 class="smart-font pulsate heavy-font">DAILY ATLANTIS SPECIALS</h1>
               
-    <ul id="imageGallery">
-        <li>
-        <a><img src="assets/menu/png/ROJO NEW MENU 3 STARTERS 2022.png" alt="Starters"><span class="label-text heavy-font">STARTERS</span></a>
-        </li>
-        <li>
-        <a><img src="assets/menu/png/ROJO NEW MENU 3 SALADS 2022.png" alt="Salads"><span class="label-text heavy-font">SALADS</span></a>
-        </li>
-        <li>
-        <a><img src="assets/menu/png/ROJO NEW MENU 3 WRAPS 2022.png" alt="Wraps"><span class="label-text heavy-font">WRAPS</span></a>
-        </li>
-        <li>
-        <a><img src="assets/menu/png/ROJO NEW MENU 3 HAMBURGERS 2022.png" alt="Hamburgers"><span class="label-text heavy-font">HAMBURGERS</span></a>
-        </li>
-        <li>
-        <a><img src="assets/menu/png/ROJO NEW MENU 3 MAIN MEALS 2022(1).png" alt="Mains Page 1"><span class="label-text heavy-font">MAINS PAGE 1</span></a>
-        </li>
-        <li>
-        <a><img src="assets/menu/png/ROJO NEW MENU 3 MAIN MEALS 2022(2).png" alt="Mains Page 2"><span class="label-text heavy-font">MAINS PAGE 2</span></a>
-        </li>
-        <li>
-        <a><img src="assets/menu/png/ROJO NEW MENU 3 PIZZA 2022.png" alt="Pizza"><span class="label-text heavy-font">PIZZA</span></a>
-        </li>
-        <li>
-        <a><img src="assets/menu/png/ROJO NEW MENU 3 KIDDIES 2022.png" alt="Kiddies Menu"><span class="label-text heavy-font">KIDDIES</span></a>
-        </li>
-        <li>
-        <a><img src="assets/menu/png/ROJO NEW MENU 3 DESSERT 2022.png" alt="Desserts"><span class="label-text heavy-font">DESSERTS</span></a>
-        </li>
-    </ul>
-    
-        </div>
-    </div>
-    </div>
-</section>
+              <!-- Sunday Buffer -->
+              <p class="elem" style="display: none;"><span class="heavy-font">SUNDAY ATLANTIS IS CLOSED</span></p>
+
+              <!-- Monday -->
+              <p class="elem" style="display: none;"><span class="heavy-font">MONDAY</span></p>
+
+              <!-- Tuesday -->
+              <p class="elem" style="display: none;"><span class="heavy-font">TUESDAY</span></p>
+
+              <!-- Wednesday -->
+              <p class="elem custom-size-nav" style="display: none;"><span class="heavy-font">WEDNESDAY</span><br>
+              PORK NECK STEAK SERVED WITH MASHED POTATOES AND COLESLAW<br>
+              AVAILABLE AT <span class="custom-font custom-size5">Rojo </span> @ ATLANTIS FROM 5PM</p>
+
+              <!-- Thursday -->
+              <p class="elem" style="display: none;"><span class="heavy-font"><B>THURSDAY MAY 12</B></span><br>
+              OVEN ROASTED CHICKEN SERVED WITH GARLIC POTATOES AND VEGGIE BAKE<br>
+              AVAILABLE AT <span class="custom-font custom-size5">Rojo </span> @ ATLANTIS FROM <span class="heavy-font"><i>5PM</i></span></p></p>
+
+              <!-- Friday -->
+              <p class="elem" style="display: none;"><span class="heavy-font">FRIDAY MAY 13</span><br>
+              BRAAI PLATE GARLIC ROLL, BOEREWORS, PORK NECK STEAK AND POTATO SALAD<br>
+              AVAILABLE AT <span class="custom-font custom-size5">Rojo </span> @ ATLANTIS FROM <span class="heavy-font"><i>5PM</i></span></p></p>
+            </div>
+          </div>
+          <section>
+            <div class="rt-container">
+              <div class="col-rt-12">
+                <div class="Scriptcontent">    
+                  <ul id="imageGallery">
+                    <div class="card my-4">
+                      <div class="card-body">
+                        <h1 class="card-text text-center smart-font custom-font"><span class="custom-font custom-size4">Rojo</span> BREAKFAST MENU</h1>
+                      </div>
+                    </div>
+                    <li>
+                    <a><img src="assets/menu/png/Rojo Breakfast menu 2022 Page 1.png" alt="BREAKFAST"><span class="label-text heavy-font">BREAKFAST 1</span></a>
+                    </li>
+                    <li>
+                    <a><img src="assets/menu/png/Rojo Breakfast menu 2022 Page 2.png"" alt="BREAKFAST"><span class="label-text heavy-font">BREAKFAST 2</span></a>
+                    </li>
+                    <div class="card my-4">
+                      <div class="card-body">
+                        <h1 class="card-text text-center smart-font custom-font"><span class="custom-font custom-size4">Rojo</span> A LA CARTE</h1>
+                      </div>
+                    </div>
+                    <li>
+                    <a><img src="assets/menu/png/ROJO NEW MENU 3 STARTERS 2022.png" alt="Starters"><span class="label-text heavy-font">STARTERS</span></a>
+                    </li>
+                    <li>
+                    <a><img src="assets/menu/png/ROJO NEW MENU 3 SALADS 2022.png" alt="Salads"><span class="label-text heavy-font">SALADS</span>  </a>
+                    </li>
+                    <li>
+                    <a><img src="assets/menu/png/ROJO NEW MENU 3 WRAPS 2022.png" alt="Wraps"><span class="label-text heavy-font">WRAPS</span></a>
+                    </li>
+                    <li>
+                    <a><img src="assets/menu/png/ROJO NEW MENU 3 HAMBURGERS 2022.png" alt="Hamburgers"><span class="label-text heavy-font">HAMBURGERS</span></a>
+                    </li>
+                    <li>
+                    <a><img src="assets/menu/png/ROJO NEW MENU 3 MAIN MEALS 2022(1).png" alt="Mains 1"><span class="label-text heavy-font">MAINS 1</span></a>
+                    </li>
+                    <li>
+                    <a><img src="assets/menu/png/ROJO NEW MENU 3 MAIN MEALS 2022(2).png" alt="Mains 2"><span class="label-text heavy-font">MAINS 2</span></a>
+                    </li>
+                    <li>
+                    <a><img src="assets/menu/png/ROJO NEW MENU 3 PIZZA 2022.png" alt="Pizza"><span class="label-text heavy-font">PIZZA</span></a>
+                    </li>
+                    <li>
+                    <a><img src="assets/menu/png/ROJO NEW MENU 3 KIDDIES 2022.png" alt="Kiddies Menu"><span class="label-text heavy-font">KIDDIES </span></a>
+                    </li>
+                    <li>
+                    <a><img src="assets/menu/png/ROJO NEW MENU 3 DESSERT 2022.png" alt="Desserts"><span class="label-text heavy-font">DESSERTS</span></a>
+                    </li>
+                    <div class="card my-4">
+                      <div class="card-body">
+                        <h1 class="card-text text-center smart-font custom-font"><span class="custom-font custom-size4">Rojo</span> @ ATLANTIS</h1>
+                      </div>
+                    </div>
+                    <li>
+                    <a><img src="assets/menu/png/Atlantis Menu 1.png" alt="ATLANTIS"><span class="label-text heavy-font">MENU 1</span></a>
+                    </li>
+                    <li>
+                    <a><img src="assets/menu/png/Atlantis Menu 2.png" alt="ATLANTIS"><span class="label-text heavy-font">MENU 2</span></a>
+                    </li>
+                    <li>
+                    <a><img src="assets/menu/png/Atlantis Self Braai Menu.png" alt="ATLANTIS"><span class="label-text heavy-font">BRAAI</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
  <script>
 $(document).ready(function(){
   $("#imageGallery").imagePopup({
@@ -154,11 +205,22 @@ $(document).ready(function(){
     <!-- Footer -->
     <br>
 
-        <div class="row bg-primary" style="background-color: #3D4D66;">
-          <div class="col-md-12 mt-3">
-            <p class="text-center text-muted">© Copyright 2018 Rojo Pub &amp; Restaurant - All rights reserved. </p>
+    <div class="row" style="background-color: #3D4D66;">
+      <div class="col-md-12 mt-3">
+        <div class="row">
+          <div class="col social-start">
+            <a href="https://www.facebook.com/rojobistrobar"><ion-icon name="logo-facebook" class="custom-size2"></ion-icon></a>
+          </div>
+          <div class="col social-mid">
+            <ion-icon name="logo-twitter"  class="custom-size2"></ion-icon>
+          </div>
+          <div class="col social-end">
+            <a href="https://www.instagram.com/rojopubandrestaurant/?hl=en"><ion-icon name="logo-instagram"  class="custom-size2"></ion-icon></a>
           </div>
         </div>
+        <p class="text-center">© Copyright 2020 Rojo Pub &amp; Restaurant - All rights reserved. </p>
+      </div>
+    </div>
 
   <!-- JavaScript dependencies -->
 
@@ -168,8 +230,9 @@ $(document).ready(function(){
   <!-- Script: Smooth scrolling between anchors in the same page -->
   <script src="js/smooth-scroll.js"></script>
   <script src="js/jquery.image-popup.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="custom-script.js"></script>
 </body>
-</body>
-  </body>
 </html>
 

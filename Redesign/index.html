@@ -45,7 +45,10 @@
             <a class="nav-link heavy-font custom-size" href="catering.html"><b>CATERING</b></a>
           </li>
           <li class="nav-item mx-2">
-              <a class="nav-link heavy-font custom-size" href="specials.html"><b>SPECIALS</b></a>
+              <a class="nav-link heavy-font custom-size" href="specials.html"><b>DAILY SPECIALS</b></a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link heavy-font custom-size" href="contact.html"><b>CONTACT</b></a>
             </li>
           <!-- <li class="nav-item mx-2">
             <a class="nav-link heavy-font custom-size" href="shop-home.html"><b>ONLINE SHOP</b></a>
@@ -58,11 +61,27 @@
   <div class="align-items-center d-flex photo-overlay py-5 cover" style="background-image: url(&quot;assets/new/jetty-light.jpeg&quot;);">
     <div class="container">
         <div class="col-lg-8 text-center container-fluid">
-          <h1 class="mb-0 mt-4 display-1 custom-font">Rojo</h1>
+          <h1 class="mb-0 mt-4 display-1 custom-font custom-size3">Rojo</h1>
           <p class="mb-5 lead">Seaside Pub &amp; Restaurant</p>
           <div class="container">
             <h4 class="smart-font">Rojo Pub &amp; Restaurant is situated at the Walvis Bay Yacht Club in the harbour town of Walvis Bay nestled between the deep blue Atlantic Ocean and the ever flowing golden sands of the Namib Desert.</h4>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup">
+    <div class="contentBox">
+      <div class="close"></div>
+      <div class="imgBx">
+        <img src="assets/logo.png">
+      </div>
+      <div class="promo content">
+        <div>
+          <h3 class="promo">Atlantis This Week</h3>
+          <h2 class="promo smart-font">Daily Specials</h2>
+        <p class="heavy-font">Cooking is like love. It should be entered into with abandon or not at all.</p>
+        <a href="specials.html"><span class="heavy-font">GET THE DEAL</span></a>
         </div>
       </div>
     </div>
@@ -197,6 +216,7 @@
           </p>
           <p>
             <a href="mailto:info@rojobistro.com" class="text-white">info@rojobistro.com</a>
+            <a href="mailto:customercare@rojobistro.com" class="text-white">customercare@rojobistro.com</a>
           </p>
         </div>
         <div class="col-md-4 p-4">
@@ -210,17 +230,54 @@
           <h2 class="mb-4 smart-font">Openings</h2>
           <p>07:00 - 21:00 Mondays to Fridays
             <br>09:00 - 21:00 Saturdays
-            <br>09:00 - 15:00 Sundays
-            <br>09:00 - 15:00 Public Holidays</p>
+            <br>09:00 - 15:00 Sundays & Public Holidays</p>
         </div>
       </div>
     </div>
     </div>
+    <!-- <div class="row" style="background-color: #3D4D66;">
+      <div class="col-md-12 mt-3">
+        <p class="text-center">© Copyright 2020 Rojo Pub &amp; Restaurant - All rights reserved. </p><p class="social"><a href="https://www.facebook.com/rojobistrobar"><ion-icon name="logo-facebook" class="custom-size2"></ion-icon></a><ion-icon name="logo-twitter"  class="custom-size2"></ion-icon><a href="https://www.instagram.com/rojopubandrestaurant/?hl=en"><ion-icon name="logo-instagram"  class="custom-size2"></ion-icon></a>
+        </p>
+      </div>
+    </div> -->
     <div class="row" style="background-color: #3D4D66;">
       <div class="col-md-12 mt-3">
-        <p class="text-center text-muted">© Copyright 2020 Rojo Pub &amp; Restaurant - All rights reserved. </p>
+        <div class="row">
+          <div class="col social-start">
+            <a href="https://www.facebook.com/rojobistrobar"><ion-icon name="logo-facebook" class="custom-size2"></ion-icon></a>
+          </div>
+          <div class="col social-mid">
+            <ion-icon name="logo-twitter"  class="custom-size2"></ion-icon>
+          </div>
+          <div class="col social-end">
+            <a href="https://www.instagram.com/rojopubandrestaurant/?hl=en"><ion-icon name="logo-instagram"  class="custom-size2"></ion-icon></a>
+          </div>
+        </div>
+        <p class="text-center">© Copyright 2020 Rojo Pub &amp; Restaurant - All rights reserved. </p>
       </div>
     </div>
+    <!-- Promo Display -->
+    <script>
+      const popup = document.querySelector('.popup');
+
+      const close = document.querySelector('.close');
+
+
+      window.onload = function(){
+        setTimeout(function(){
+          popup.style.display = "block"
+
+          //Time delay
+        }, 1500)
+
+      }
+
+
+      close.addEventListener('click', () => {
+        popup.style.display = "none";
+      })
+    </script>
 
   <!-- JavaScript dependencies -->
 
@@ -230,6 +287,8 @@
   <!-- Script: Smooth scrolling between anchors in the same page -->
   <script src="js/smooth-scroll.js"></script>
   <script src="js/jquery.image-popup.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
 
