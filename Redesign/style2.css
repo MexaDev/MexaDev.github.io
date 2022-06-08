@@ -12,6 +12,14 @@ h3 {
 	font-family: 'Montserrat';
 }
 
+.dropdown-menu {
+    border-radius: 25px;
+}
+
+.dropdown-item {
+    border-radius: 25px;
+}
+
 .heavy-font {
 	font-weight: bold;
 }

@@ -19,36 +19,45 @@
   </head>
 
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #3D4D66;">
-      <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar3SupportedContent" aria-controls="navbar3SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-        <div class="collapse navbar-collapse text-center justify-content-center" id="navbar3SupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item mx-3">
-              <a class="nav-link text-light" href="index.html"><b><span class="custom-font custom-size2">Rojo</span></b></a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link heavy-font custom-size" href="menu.html"><b>MENU</b></a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link heavy-font custom-size" href="venue.html"><b>VENUE</b></a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link heavy-font custom-size" href="catering.html"><b>CATERING</b></a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link text-light heavy-font custom-size" href="specials.html"><b>DAILY SPECIALS</b></a>
-            </li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #3D4D66;">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar3SupportedContent" aria-controls="navbar3SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse text-center justify-content-center" id="navbar3SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-3">
+            <a class="nav-link text-light" href="index.html"><b><span class="custom-font custom-size2">Rojo</span></b></a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link heavy-font custom-size" href="index.html"><b>HOME</b></a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link heavy-font custom-size" href="venue.html"><b>VENUE</b></a>
+          </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle heavy-font custom-size" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            MENUS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #3D4D66;">
+            <li><a class="dropdown-item custom-size text-center" style="background-color: #3D4D66;" href="rojo.html"><span class="text-white custom-font custom-size2">Rojo</span><span class="heavy-font"> Pub & Restaurant</span></a></li>
+            <li><a class="dropdown-item custom-size text-center" style="background-color: #3D4D66;" href="atlantis.html"><span class="text-white custom-font custom-size2">Rojo</span><span class="heavy-font"> @ Atlantis</span></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item heavy-font custom-size text-center" style="background-color: #3D4D66;" href="platters.html">Platter Menu</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item heavy-font custom-size text-center" style="background-color: #3D4D66;" href="specials.html">Daily Specials</a></li>
+          </ul>
+
+        </li>
             <li class="nav-item mx-2">
               <a class="nav-link heavy-font custom-size" href="contact.html"><b>CONTACT</b></a>
             </li>
-            <!-- <li class="nav-item mx-2">
-              <a class="nav-link heavy-font custom-size" href="shop-home.html"><b>ONLINE SHOP</b></a>
-            </li> -->
-        </div>
+          <!-- <li class="nav-item mx-2">
+            <a class="nav-link heavy-font custom-size" href="shop-home.html"><b>ONLINE SHOP</b></a>
+          </li> -->
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
     <!-- Cover -->
     <div class="align-items-center d-flex photo-overlay py-5 cover2" style="background-image: url('assets/new/tawall.jpg');">
       <div class="container">
@@ -69,15 +78,10 @@
           <div class="padding-top">
           <div class="ro">
             <div class="col-md-12 card">
-              <img src="assets/menu/Specials/Atlantis Special Menu.png" class="img rojoPadding2 rojoImage" alt="venue_image">
+              <img src="assets/menu/Specials/Atlantis 6 June.png" class="img rojoPadding2 rojoImage" alt="daily_specials">
             </div>
           </div>
         </div>
-
-        <!-- <a href="assets/special/Atlantis.png" download>
-          <img src="assets/special/Atlantis.png" alt="W3Schools" width="104" height="142">
-        </a> -->
-
 
         </div>
       </div>
@@ -103,6 +107,7 @@
 
   <!-- JavaScript dependencies -->
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

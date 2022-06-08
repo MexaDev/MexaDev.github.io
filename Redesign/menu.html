@@ -25,36 +25,46 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
   <body onload="show()" class="smart-font text-center">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #3D4D66;">
-      <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar3SupportedContent" aria-controls="navbar3SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-        <div class="collapse navbar-collapse text-center justify-content-center" id="navbar3SupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item mx-3">
-              <a class="nav-link text-light" href="index.html"><b><span class="custom-font custom-size2">Rojo</span></b></a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link text-light heavy-font custom-size" href="menu.html"><b>MENU</b></a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link heavy-font custom-size" href="venue.html"><b>VENUE</b></a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link heavy-font custom-size" href="catering.html"><b>CATERING</b></a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link heavy-font custom-size" href="specials.html"><b>DAILY SPECIALS</b></a>
-            </li>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light" style="background-color: #3D4D66;">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar3SupportedContent" aria-controls="navbar3SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse text-center justify-content-center" id="navbar3SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-3">
+            <a class="nav-link text-light" href="index.html"><b><span class="custom-font custom-size2">Rojo</span></b></a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link heavy-font custom-size" href="index.html"><b>HOME</b></a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link heavy-font custom-size" href="venue.html"><b>VENUE</b></a>
+          </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle heavy-font custom-size" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            MENUS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #3D4D66;">
+            <li><a class="dropdown-item custom-size text-center" style="background-color: #3D4D66;" href="#"><span class="text-white custom-font custom-size2">Rojo</span><span class="heavy-font"> Pub & Restaurant</span></a></li>
+            <li><a class="dropdown-item custom-size text-center" style="background-color: #3D4D66;" href="#"><span class="text-white custom-font custom-size2">Rojo</span><span class="heavy-font"> @ Atlantis</span></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item heavy-font custom-size text-center text-white" style="background-color: #3D4D66;" href="platters.html">Platter Menu</a></li>
+            <!-- <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item heavy-font custom-size text-center" style="background-color: #3D4D66;" href="specials.html">Daily Specials</a></li> -->
+          </ul>
+
+        </li>
             <li class="nav-item mx-2">
               <a class="nav-link heavy-font custom-size" href="contact.html"><b>CONTACT</b></a>
             </li>
-            <!-- <li class="nav-item mx-2">
-              <a class="nav-link heavy-font custom-size" href="shop-home.html"><b>ONLINE SHOP</b></a>
-            </li> -->
-        </div>
+          <!-- <li class="nav-item mx-2">
+            <a class="nav-link heavy-font custom-size" href="shop-home.html"><b>ONLINE SHOP</b></a>
+          </li> -->
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
     <!-- Cover -->
     <div class="align-items-center d-flex photo-overlay cover2" style="background-image: url('assets/new/pizza.jpg');">
       <div class="container">
@@ -71,7 +81,8 @@
               <h1 class="smart-font pulsate heavy-font">DAILY ATLANTIS SPECIALS</h1>
               
               <!-- Sunday Buffer -->
-              <p class="elem" style="display: none;"><span class="heavy-font">SUNDAY ATLANTIS IS CLOSED</span></p>
+              <p class="elem" style="display: none;"><span class="heavy-font">SUNDAY</span><br>
+              <span class="text-uppercase">Sunday clears away the rust of the whole week.</span></p>
 
               <!-- Monday -->
               <p class="elem" style="display: none;"><span class="heavy-font">MONDAY</span></p>
@@ -85,14 +96,18 @@
               AVAILABLE AT <span class="custom-font custom-size5">Rojo </span> @ ATLANTIS FROM 5PM</p>
 
               <!-- Thursday -->
-              <p class="elem" style="display: none;"><span class="heavy-font"><B>THURSDAY MAY 12</B></span><br>
+              <p class="elem" style="display: none;"><span class="heavy-font"><B>THURSDAY</B></span><br>
               OVEN ROASTED CHICKEN SERVED WITH GARLIC POTATOES AND VEGGIE BAKE<br>
               AVAILABLE AT <span class="custom-font custom-size5">Rojo </span> @ ATLANTIS FROM <span class="heavy-font"><i>5PM</i></span></p></p>
 
               <!-- Friday -->
-              <p class="elem" style="display: none;"><span class="heavy-font">FRIDAY MAY 13</span><br>
+              <p class="elem" style="display: none;"><span class="heavy-font">FRIDAY MAY</span><br>
               BRAAI PLATE GARLIC ROLL, BOEREWORS, PORK NECK STEAK AND POTATO SALAD<br>
               AVAILABLE AT <span class="custom-font custom-size5">Rojo </span> @ ATLANTIS FROM <span class="heavy-font"><i>5PM</i></span></p></p>
+
+              <!-- Saturday -->
+              <p class="elem" style="display: none;"><span class="heavy-font">SATURDAY</span><br>
+              <span class="text-uppercase">"It's a fine line between Saturday night and Sunday morning."</span></p>
             </div>
           </div>
           <section>
@@ -224,6 +239,7 @@ $(document).ready(function(){
 
   <!-- JavaScript dependencies -->
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -232,7 +248,6 @@ $(document).ready(function(){
   <script src="js/jquery.image-popup.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="custom-script.js"></script>
 </body>
 </html>
 
