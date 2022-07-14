@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
@@ -11,23 +10,17 @@
     <meta name="keywords" content="Rojo Pub Restaurant Bar Cafe Venue Walvis Bay Erongo Namibia Yacht Club">
     <!-- CSS dependencies -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-    <!-- Image Popup CSS -->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="style2.css" type="text/css">
     <!-- Script: Make my navbar transparent when the document is scrolled to top -->
-    <!-- <script src="js/navbar-ontop.js"></script> -->
+    <script src="js/navbar-ontop.js"></script>
     <!-- Script: Animated entrance -->
     <script src="js/animate-in.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.image-popup.js"></script>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
-  <body onload="show()" class="smart-font text-center">
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-md navbar-light" style="background-color: #3D4D66;">
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #3D4D66;">
     <div class="container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar3SupportedContent" aria-controls="navbar3SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse text-center justify-content-center" id="navbar3SupportedContent">
@@ -42,7 +35,7 @@
             <a class="nav-link heavy-font custom-size" href="venue.html"><b>VENUE</b></a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link heavy-font custom-size" href="events.html"><b>EVENTS</b></a>
+            <a class="nav-link heavy-font custom-size text-light" href="events.html"><b>EVENTS</b></a>
           </li>
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle heavy-font custom-size" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -69,77 +62,68 @@
     </div>
   </nav>
     <!-- Cover -->
-    <div class="align-items-center d-flex photo-overlay cover2" style="background-image: url('assets/new/pizza.jpg');">
+    <div class="align-items-center d-flex photo-overlay py-5 cover2" style="background-image: url('assets/new/party.jpg');">
       <div class="container">
 
           <!-- Menu -->
-          <section>
-            <div class="rt-container">
-              <div class="col-rt-12">
-                <div class="Scriptcontent">    
-                  <ul id="imageGallery">
-                      
-                    <div class="card my-4">
-                      <div class="card-body">
-                        <h1 class="card-text text-center smart-font custom-font"><span class="custom-font custom-size4">Rojo</span> @ ATLANTIS</h1>
-                      </div>
-                    </div>
-                    <li>
-                    <a><img src="assets/menu/png/Atlantis Menu 1.png" alt="ATLANTIS"><span class="label-text heavy-font">MENU 1</span></a>
-                    </li>
-                    <li>
-                    <a><img src="assets/menu/png/Atlantis Menu 2.png" alt="ATLANTIS"><span class="label-text heavy-font">MENU 2</span></a>
-                    </li>
-                    <li>
-                    <a><img src="assets/menu/png/Atlantis Self Braai Menu.png" alt="ATLANTIS"><span class="label-text heavy-font">BRAAI</span></a>
-                    </li>
-                  </ul>
+
+          <div class="card my-4">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col text-center">
+                  <video width="50%" height="50%" class="card-text text-center smart-font" loop autoplay muted>
+                    <source src="assets/media/fire.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="col text-center">
+                  <video width="50%" height="50%" class="card-text text-center smart-font" loop autoplay muted>
+                    <source src="assets/media/fire.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="col text-center">
+                  <video width="50%" height="50%" class="card-text text-center smart-font" loop autoplay muted>
+                    <source src="assets/media/fire.mp4" type="video/mp4">
+                  </video>
                 </div>
               </div>
+              <!-- <div class="clearfix">
+                <video width="50%" height="50%" class="card-text text-center smart-font" loop autoplay muted>
+                  <source src="assets/media/fire.mp4" type="video/mp4">
+                </video>
+
+                <p class="custom-size2">
+                  Join us Friday 1st July for some live music from the talent that is Riaan Smit. Grab a Hansa Draught for N$ 20.00 and enjoy the show!
+                </p>
+                <p class="custom-size2">
+                  Show starts at 19H00 until 21H00
+                </p>
+              </div> -->
             </div>
-          </section>
+          </div>
 
- <script>
-$(document).ready(function(){
-  $("#imageGallery").imagePopup({
-    overlay: "rgba(0, 0, 0, 0.7)",
 
-    closeButton:{
-        src: "img/close.png",
-        width: "40px",
-        height:"40px"
-    },
-    imageBorder: "10px solid #ffffff",
-    borderRadius: "6px",
-    imageWidth: "800px",
-    imageHeight: "auto",
-    imageCaption: {
-        exist: true,
-        color: "#ffffff",
-        fontSize: "18px"
-    },
-    open: function(){
-        console.log("opened");
-    },
-    close: function(){
-        console.log("closed");
-    }
-});
+          <div class="card my-4">
+            <div class="card-body">
+              <div class="clearfix">
+                <img src="assets/events/Riaan Smit.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 float-right" alt="...">
 
-});
-</script>    
-     
-   <!-- Global site tag (gtag.js) - Google Analytics DO NOT INCLUDE THIS CODE -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121888571-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+                <p class="custom-size2">
+                  Join us Friday 1st July for some live music from the talent that is Riaan Smit. Grab a Hansa Draught for N$ 20.00 and enjoy the show!
+                </p><br>
+                <p class="custom-size2">
+                  Show starts at 19H00 until 21H00
+                </p><br>
+                <p class="custom-size2">
+                  Special available until stock lasts!
+                </p>
+              </div>
+            </div>
+          </div>
+        
 
-      gtag('config', 'UA-121888571-1');
-    </script>
+ 
+
     <!-- Footer -->
-    <br>
 
     <div class="row" style="background-color: #3D4D66;">
       <div class="col-md-12 mt-3">
@@ -171,4 +155,3 @@ $(document).ready(function(){
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
-
