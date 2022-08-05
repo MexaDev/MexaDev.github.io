@@ -1,0 +1,43 @@
+/*// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)*/
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/*// Then add additional custom code here*/
+
+.tm-color {
+	background-color: rgba(20, 47, 64, 1);
+
+}
+
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	/*height: 68.5vh;*/
+	height: 80%;
+}
+
+.cContainer1 {
+	width: 100%;
+	height: 75vh;
+	background-color: rgba(20, 47, 64, 1);
+}
+
+.cContainer2 {
+	width: 100%;
+	height: 75vh;
+	background-color: rgba(20, 47, 64, 0.75);
+}
+
+.nav-link {
+	color: white;
+}
+
+.cCard {
+	width: 45%;
+	height: 45%;
+}

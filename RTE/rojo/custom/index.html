@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>onclick Image Popup jQuery Demo </title>
+    <meta name="description" content="Semplice plugin in jQuery - Image Gallery Popup.Written in HTML, CSS, JavaScript (jQuery)" />
+    <meta name="author" content="Frontendscript" />
+   
+    <!--Only for demo purpose - no need to add.-->
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Image Popup CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Image Popup JS -->
+    <script src="js/jquery.image-popup.js"></script>
+</head>
+<body>
+		
+<div class="ScriptTop">
+    <div class="rt-container">
+        <div class="col-rt-4" id="float-right">
+             
+        </div>
+        <div class="col-rt-2">
+            <ul>
+                <li><a href="https://frontendscript.com/onclick-image-popup">Back to the Tutorial</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<header class="ScriptHeader">
+    <div class="rt-container">
+    	<div class="col-rt-12">
+        	<div class="rt-heading">
+            	<h1>Image Popup OnClick jQuery</h1>
+                <p>Easy to use plugin for images that works for popup onlick</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="rt-container">
+          <div class="col-rt-12">
+              <div class="Scriptcontent">
+              
+
+<ul id="imageGallery">
+    <li>
+    <a><img src="img/img1.jpg" alt="Sample Image 1"></a>
+    </li>
+        <li>
+    <a><img src="img/img2.jpg" alt="jQuery Image Popup - CodeHim"></a>
+    </li>
+        <li>
+    <a><img src="img/img3.jpg" alt="Sample Image 3"></a>
+    </li>
+        <li>
+    <a><img src="img/img4.jpg" alt="Sample Image 4"></a>
+    </li>
+        <li>
+    <a><img src="img/img5.jpg" alt="Sample Image 5"></a>
+    </li>
+</ul>
+    
+    		</div>
+		</div>
+    </div>
+</section>
+ <script>
+$(document).ready(function(){
+	$("#imageGallery").imagePopup({
+    overlay: "rgba(0, 0, 0, 0.7)",
+
+    closeButton:{
+        src: "img/close.png",
+        width: "40px",
+        height:"40px"
+    },
+    imageBorder: "10px solid #ffffff",
+    borderRadius: "6px",
+    imageWidth: "800px",
+    imageHeight: "auto",
+    imageCaption: {
+        exist: true,
+        color: "#ffffff",
+        fontSize: "18px"
+    },
+    open: function(){
+        console.log("opened");
+    },
+    close: function(){
+        console.log("closed");
+    }
+});
+
+});
+</script>    
+     
+   <!-- Global site tag (gtag.js) - Google Analytics DO NOT INCLUDE THIS CODE -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121888571-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-121888571-1');
+    </script>
+    
+    
+	</body>
+</html>
