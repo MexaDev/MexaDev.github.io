@@ -1,10 +1,23 @@
-const pars = document.querySelectorAll("p")
+var display = document.querySelectorAll("p");
+
 function hide(){
-    var display = document.getElementById("demo");
-    display.classList.add("display_hidden");
+    for (let i = 0; i < display.length; i++)
+    display[i].classList.add("display_hidden");
 }
 function show(){
-    var display = document.getElementById("demo");
-    display.classList.remove("display_hidden");
+    for (let i = 0; i < display.length; i++)
+    display[i].classList.remove("display_hidden");
 }
-console.log(pars)
+function toggle(){
+    for (let i = 0; i < display.length; i++)
+    display[i].classList.toggle("display_hidden")
+}
+function background(){
+    let back = document.querySelector("html");
+    back.classList.toggle("bg")
+}
+function test(){
+    const i = document.getElementById("head");
+    i.innerHTML = "This Heading is now Changed!";
+    alert("TEST")
+}
