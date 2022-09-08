@@ -24,13 +24,20 @@
 .cContainer1 {
 	width: 100%;
 	height: 75vh;
-	background-color: rgba(20, 47, 64, 1);
+	background-color: #142F40;
 }
 
 .cContainer2 {
 	width: 100%;
 	height: 75vh;
-	background-color: rgba(20, 47, 64, 0.75);
+	background-color: #806C32;
+}
+
+.cContainer3 {
+	width: 50%;
+	border-radius: 25px;
+	background-color: #142F40;
+	color: grey;
 }
 
 .nav-link {
@@ -38,6 +45,16 @@
 }
 
 .cCard {
-	width: 45%;
-	height: 45%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 50%;
+	border-radius: 25px;
+	background-color: #142F40;
+	color: grey;
+	box-shadow: 10px,10px white;
+}
+
+.highLight {
+	color: white;
+	font-weight: bold;
 }
