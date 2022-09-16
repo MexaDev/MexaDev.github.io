@@ -16,3 +16,7 @@ function first(){
 
 const newFunc = first();
 newFunc();
+
+//Currying
+const multiply = (a,b) => a * b;
+const curriedMultiply = (a) => (b) => a*b;
