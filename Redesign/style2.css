@@ -337,7 +337,7 @@ h3 {
     padding-top: 50px;
 }
 
-.container2 {
+/* .container2 {
     margin: 0 40px;
     max-width: 100%;
     display: flex;
@@ -515,4 +515,56 @@ h3 {
 
 .container2 .tab input:checked ~ .content p {
     color: #fff;
-}
+} */
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #3D4D66;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .closer {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 40px;
+    height: 40px;
+    background: rgba(243,243,243,0.5) url(assets/new/close.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+  }
+  
+  .closer:hover,
+  .closer:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .display {
+    display: block; /* Visible by default */
+  }
+  h3:hover {
+    cursor: pointer;
+  }

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="style2.css" type="text/css">
     <!-- Script: Make my navbar transparent when the document is scrolled to top -->
-    <!-- <script src="js/navbar-ontop.js"></script> -->
+    <script src="js/navbar-ontop.js"></script>
     <!-- Script: Animated entrance -->
     <script src="js/animate-in.js"></script>
     <script src="js/custom.js"></script>
@@ -24,7 +24,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
-  <body onload="show()" class="smart-font text-center">
+  <body class="smart-font text-center">
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-light" style="background-color: #3D4D66;">
@@ -48,13 +48,13 @@
           <a class="nav-link dropdown-toggle heavy-font custom-size" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             MENUS
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #3D4D66;">
-            <li><a class="dropdown-item custom-size text-center" style="background-color: #3D4D66;" href="rojo.html"><span class="text-white custom-font custom-size2">Rojo</span><span class="heavy-font"> Pub & Restaurant</span></a></li>
-            <li><a class="dropdown-item custom-size text-center" style="background-color: #3D4D66;" href="atlantis.html"><span class="text-white custom-font custom-size2">Rojo</span><span class="heavy-font"> @ Atlantis</span></a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #55647C;">
+            <li><a class="dropdown-item custom-size text-center" style="background-color: #55647C;" href="rojo.html"><span class="text-white custom-font custom-size2">Rojo</span><span class="heavy-font"> Pub & Restaurant</span></a></li>
+            <!-- <li><a class="dropdown-item custom-size text-center" style="background-color: #3D4D66;" href="atlantis.html"><span class="text-white custom-font custom-size2">Rojo</span><span class="heavy-font"> @ Atlantis</span></a></li> -->
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item heavy-font custom-size text-center" style="background-color: #3D4D66;" href="platters.html">Platter Menu</a></li>
+            <li><a class="dropdown-item heavy-font custom-size text-center" style="background-color: #55647C;" href="platters.html">Platter Menu</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item heavy-font custom-size text-center" style="background-color: #3D4D66;" href="specials.html">Daily Specials</a></li>
+            <li><a class="dropdown-item heavy-font custom-size text-center" style="background-color: #55647C;" href="specials.html">Daily Specials</a></li>
           </ul>
 
         </li>
@@ -85,10 +85,29 @@
                       </div>
                     </div>
                     <li>
-                    <a><img src="assets/menu/png/Rojo Breakfast menu 2022 Page 1.png" alt="BREAKFAST"><span class="label-text heavy-font">BREAKFAST 1</span></a>
+                    <a><img src="assets/menu/png/BREAKFAST MENU ROJO WBYC SEP 22(1).png" alt="BREAKFAST"><span class="label-text heavy-font">BREAKFAST 1</span></a>
                     </li>
                     <li>
-                    <a><img src="assets/menu/png/Rojo Breakfast menu 2022 Page 2.png" alt="BREAKFAST"><span class="label-text heavy-font">BREAKFAST 2</span></a>
+                    <a><img src="assets/menu/png/BREAKFAST MENU ROJO WBYC SEP 22(2).png" alt="BREAKFAST"><span class="label-text heavy-font">BREAKFAST 2</span></a>
+                    </li>
+                    <div class="card my-4">
+                      <div class="card-body">
+                        <h1 class="card-text text-center smart-font custom-font">SUSHI</h1>
+                      </div>
+                    </div>
+                    <li>
+                    <a><img src="assets/menu/png/ROJO SUSHI MENU WBYC OCT 22(1).png" alt="BREAKFAST"><span class="label-text heavy-font">SUSHI 1</span></a>
+                    </li>
+                    <li>
+                    <a><img src="assets/menu/png/ROJO SUSHI MENU WBYC OCT 22(2).png" alt="BREAKFAST"><span class="label-text heavy-font">SUSHI 2</span></a>
+                    </li>
+                    <div class="card my-4">
+                      <div class="card-body">
+                        <h1 class="card-text text-center smart-font custom-font">SELF BRAAI</h1>
+                      </div>
+                    </div>
+                    <li>
+                    <a><img src="assets/menu/png/ROJO WBYC BRAAI BOX 1.png" alt="Braai Box"><span class="label-text heavy-font">Braai Box</span></a>
                     </li>
                     <div class="card my-4">
                       <div class="card-body">
@@ -141,7 +160,7 @@ $(document).ready(function(){
     },
     imageBorder: "10px solid #ffffff",
     borderRadius: "6px",
-    imageWidth: "800px",
+    imageWidth: "80%",
     imageHeight: "auto",
     imageCaption: {
         exist: true,
