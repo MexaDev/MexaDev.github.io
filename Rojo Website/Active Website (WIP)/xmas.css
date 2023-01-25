@@ -1,0 +1,5 @@
+#snow {
+  background:linear-gradient(to top, navy, black);
+  min-height:100vh;
+  overflow:hidden;
+}
