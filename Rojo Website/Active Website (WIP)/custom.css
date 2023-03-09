@@ -1,0 +1,10 @@
+.image {
+	display: none;
+	position: fixed
+	z-index: 1;
+}
+
+.modal-content {
+	width: 175rem;
+}
+
