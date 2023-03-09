@@ -91,6 +91,49 @@
                     <li>
                     <a><img src="assets/menu 2023/png/Breakfast 2023(2).png" alt="BREAKFAST"><span class="label-text heavy-font">BREAKFAST 2</span></a>
                     </li>
+                    <li>
+                      <!-- MENU TEST -->
+                      <div class="card my-4">
+                        <div class="card-body">
+                        <h3 class="text-center heavy-font" onclick="displayInfo1()">SAVORY PLATTER</h3>
+                        <div id="description1" class="modal">
+                          <div class="modal-content">
+                            <span onclick="closeInfo1()" id="close1" class="closer text-end">&times;</span>
+                            <h1 class="text-center text-light heavy-font">BREAKFAST</h1>
+                            <!-- WARM BREKKIE -->
+                            <p class="text-center text-light heavy-font custom-size">WARM BREKKIE</p>
+                            <div class="cposition">
+                              <div class="container">
+                              <!-- SPACER -->
+                              <h4 class="text-center text-light heavy-font">ENGLISH BREAKFAST</h4>
+                                <div class="row">
+                                  <div class="col-8">
+                                    <p class="custom-size-nav heavy-font">
+                                      2 eggs, bacon, boerewors, grilled tomato,
+                                      mushrooms, baked beans and toast
+                                    </p>
+                                  </div>
+                                  <div class="col-4">
+                                    <p class="custom-size-nav heavy-font text-light">N$ 125</p>
+                                  </div>
+                                </div>
+                                <br>
+                                <!-- SPACER -->
+                                <h4 class="text-center text-light heavy-font">SHAKSHUKA</h4>
+                                <div class="row">
+                                  <div class="col-8">
+                                    <p class="custom-size-nav heavy-font">
+                                      Maghrebi dish of eggs poached in a sauce of tomatoes, olive oil,
+                                       peppers, onion and garlic, spiced with cumin, paprika and chilli 
+                                       flakes and served with a buttered roll.
+                                    </p>
+                                  </div>
+                                  <div class="col-4">
+                                    <p class="custom-size-nav heavy-font text-light">N$ 135</p>
+                                  </div>
+                                </div>
+                                <br>
+                    </li>
                     <div class="card my-4">
                       <div class="card-body">
                         <h1 class="card-text text-center smart-font custom-font">SUSHI</h1>
@@ -218,6 +261,7 @@ $(document).ready(function(){
   <script src="js/jquery.image-popup.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/platter-viewer.js"></script>
 </body>
 </html>
 
