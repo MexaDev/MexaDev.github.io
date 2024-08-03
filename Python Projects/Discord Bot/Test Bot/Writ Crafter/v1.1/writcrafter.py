@@ -3,7 +3,8 @@ from discord.ext import commands
 import discord.ui
 from discord.ui import View, Button, Select
 
-# BOT_TOKEN = "MTI2NTcyNjA4NzcyODU5NTAyNQ.GW4i4d.8AtSxs98zZxye_B6zOhLDc0dbLRDZ7T9-R95bE"
+BOT_TOKEN = ""
+
 CHANNEL_ID = 1265711359736287263
 intents = discord.Intents.default()
 intents.message_content = True
