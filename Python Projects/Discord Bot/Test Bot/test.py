@@ -3,7 +3,7 @@ from discord.ext import commands
 import discord.ui
 from discord.ui import View, Button, Select
 
-# BOT_TOKEN = "MTI2NTcyNjA4NzcyODU5NTAyNQ.GW4i4d.8AtSxs98zZxye_B6zOhLDc0dbLRDZ7T9-R95bE"
+# BOT_TOKEN = "MTI2NTY5MzYwODI1NDY0MDE3OQ.GHG-5t.-o9fIpF84tSSm-T2zFyQDgvIQJxR0o33xjTzHA"
 CHANNEL_ID = 1265711359736287263
 intents = discord.Intents.default()
 intents.message_content = True
@@ -73,7 +73,6 @@ async def ticketcallback(interaction):
             # await interaction.response.send_message(f"Created bug report", ephemeral=True)
             await channel.send(f"Hi {interaction.user.name} what bug would you like to report, please supply as much info as possible.?")
 
-
     select.callback = my_callback
     view = View(timeout=None)
     view.add_item(select)
@@ -81,10 +80,19 @@ async def ticketcallback(interaction):
 
 @bot.command()
 async def ticket(ctx):
-    button = Button(label="📥 Create Ticket", style=discord.ButtonStyle.green)
-    button.callback = ticketcallback
+    button1 = Button(label="🛠️ Crafting Writs", style=discord.ButtonStyle.success)
+    button2 = Button(label="📥 Work In Progress", style=discord.ButtonStyle.secondary)
+    button3 = Button(label="📥 Work In Progress", style=discord.ButtonStyle.secondary)
+    button4 = Button(label="📥 Work In Progress", style=discord.ButtonStyle.secondary)
+    button1.callback = ticketcallback
+    button2.callback = ticketcallback
+    button3.callback = ticketcallback
+    button4.callback = ticketcallback
     view = View(timeout=None)
-    view.add_item(button)
-    await ctx.send("Open a crafting writ or bug report below.", view=view, embed=embed)
+    view.add_item(button1)
+    view.add_item(button2)
+    view.add_item(button3)
+    view.add_item(button4)
+    await ctx.send("Open a crafting writ or bug report below.", view=view)
 
 bot.run(BOT_TOKEN)
