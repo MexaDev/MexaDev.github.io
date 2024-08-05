@@ -1,0 +1,18 @@
+Trader Pseudo
+
+Bot with buttons (Undetermined)
+	Button 1:
+	List Items For Trade
+		Opens ticket channel / or dm chat for listing items
+		User is send a list of commands of how to list items
+		User is able to list multiple items 
+
+		NB:
+		    Database might need to be modified to accomodate unique ids..
+
+	Button 2:
+	List all open trades
+		Drop down menu of listed items (item_id)
+
+	Button 3:
+	Remove listed items
